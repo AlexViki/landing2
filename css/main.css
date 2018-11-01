@@ -6,7 +6,7 @@
 }
 .container-padding {
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .heading-block {
   display: flex;
@@ -106,7 +106,7 @@ body {
   text-decoration: none;
 }
 .heading-block {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .heading-1 {
