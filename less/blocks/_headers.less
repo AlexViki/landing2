@@ -1,17 +1,63 @@
 // стили для всех заголовков на странице
+@color-heading-4:#2c2c2c;
+@color-subtitle-text: #2c2c2c;
+
+.heading-block {
+    margin-bottom: 80px;
+    text-align: center;
+}
 
 .heading-1 {
-    margin-top: 0;
     font-size: 60px;
     line-height: 65px;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -2px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.heading-2 {
+    font-size: 45px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 20px;
+    color: #808080;
+}
+
+.subtitle.subtitle--header {
     color: #fff;
     margin-bottom: 50px;
+}
+
+.col-1-of-3 {
+    width: 300px;
+    text-align: center;
+}
+
+.container-items {
+    &__icon{
+        height: 64px;
+        width: 64px;
+    }
+    &__heading-4 {
+        color: @color-heading-4;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        color: @color-subtitle-text;
+        font-size: 14px;
+    }
 }
