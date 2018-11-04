@@ -33,9 +33,6 @@
   width: 80%;
   margin-left: 20%;
 }
-.content-services-block {
-  width: 500px;
-}
 * {
   box-sizing: border-box;
 }
@@ -302,7 +299,6 @@ body {
   height: 44px;
 }
 .view-link {
-  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -312,7 +308,6 @@ body {
   transition: 0.2s;
   border-bottom: 0px solid #3db39e;
   padding-bottom: 8px;
-  margin-bottom: 10px;
 }
 .view-link:hover,
 .view-link:focus,
@@ -328,6 +323,23 @@ body {
   border-bottom: 1px solid #ff8000;
   padding-bottom: 2px;
   text-decoration: none;
+}
+.bottom20 {
+  margin-bottom: 20px;
+}
+.latest-project-content-block {
+  display: flex;
+}
+.content-brg-photo {
+  height: 500px;
+  width: 100%;
+  background: #3DB39E;
+}
+.content-brg-photo {
+  background-image: url(../img/bgr/tablets_0.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
 }
 .container-items__icon {
   height: 64px;
