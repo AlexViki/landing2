@@ -48,6 +48,9 @@
 .text {
   line-height: 22px;
 }
+.bgr-color {
+  background-color: #eeeeee;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -344,4 +347,38 @@ body {
 .container-items__icon {
   height: 64px;
   width: 64px;
+}
+.block-clients {
+  margin-top: 50px;
+}
+.block-comments {
+  display: flex;
+  flex-direction: column;
+}
+.block-comments-1 {
+  background-color: aqua;
+}
+.block-comments-2 {
+  background-color: rebeccapurple;
+}
+.photo-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-client img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+.comment-client {
+  background-color: red;
+  height: 170px;
+  width: 600px;
+}
+.comments {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
