@@ -1,3 +1,5 @@
+@bgr-color: #eeeeee;
+
 .block-clients {
     margin-top: 50px;
 }
@@ -11,12 +13,12 @@
 .block-comments-1 {
     //height: 100px;
     //width: 100%;
-    background-color: aqua;
+    //background-color: aqua;
 }
 .block-comments-2 {
     //height: 100px;
     //width: 100%;
-    background-color: rebeccapurple;
+    //background-color: rebeccapurple;
 }
 
 .photo-client {
@@ -31,9 +33,16 @@
 }
 
 .comment-client {
-    background-color: red;
-    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:@bgr-color;
     width: 600px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .comments {
@@ -41,4 +50,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.comment-client-text {
+    font-size: 1.125em;
+    margin-bottom: 0.9em;
+    //text-align: center;
+}
+
+.comment-client-quote {
+    font-size: 0.9em;
+    font-style: italic;
 }
