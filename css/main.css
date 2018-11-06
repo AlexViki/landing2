@@ -396,3 +396,14 @@ body {
   font-size: 0.9em;
   font-style: italic;
 }
+.next-project {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: aqua;
+  height: 100px;
+}
+.next-project__contact {
+  height: 100px;
+  width: 300px;
+}
