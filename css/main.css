@@ -424,3 +424,17 @@ body {
   font-weight: bolder;
   margin-bottom: 60px;
 }
+.next-project__contact:hover {
+  color: orangered;
+  border: 2px solid orangered;
+  background-color: #fff;
+}
+.block-logos {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: 150px;
+}
+.block-logos img {
+  margin: auto;
+}
