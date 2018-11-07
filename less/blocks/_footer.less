@@ -1,0 +1,53 @@
+@main-green: #3DB39E;
+@color-heading-5:#2c2c2c;
+@color-subtitle-text: #2c2c2c;
+
+.container-color-brg{
+    background-color: @main-green;
+}
+
+.block-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-items {
+    background-color: blueviolet;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__contacts {
+        background-color: yellow;
+        height: 50px;
+        width: 250px;
+    }
+
+    &__posts {
+        background-color: red;
+        height: 50px;
+        width: 300px;
+    }
+
+    &__tweets {
+        background-color: greenyellow;
+        height: 50px;
+        width: 300px;
+    }
+}
+
+.social-items {
+    background-color: grey;
+    height: 150px;
+    width: 100%;
+}
+
+.heading-5 {
+    color: @color-heading-5;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 700;
+    //letter-spacing: -2px;
+}

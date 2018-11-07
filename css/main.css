@@ -438,3 +438,44 @@ body {
 .block-logos img {
   margin: auto;
 }
+.container-color-brg {
+  background-color: #3db39e;
+}
+.block-footer {
+  display: flex;
+  flex-direction: column;
+}
+.info-items {
+  background-color: blueviolet;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-items__contacts {
+  background-color: yellow;
+  height: 50px;
+  width: 250px;
+}
+.info-items__posts {
+  background-color: red;
+  height: 50px;
+  width: 300px;
+}
+.info-items__tweets {
+  background-color: greenyellow;
+  height: 50px;
+  width: 300px;
+}
+.social-items {
+  background-color: grey;
+  height: 150px;
+  width: 100%;
+}
+.heading-5 {
+  color: #2c2c2c;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+}
