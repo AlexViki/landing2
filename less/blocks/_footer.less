@@ -1,9 +1,16 @@
 @main-green: #3DB39E;
-@color-heading-5:#2c2c2c;
-@color-subtitle-text: #2c2c2c;
+@footer-bgr-color: #222222;
+@color-text: #fff;
+
+
+.footer {
+    color: @color-text;
+    font-size: 0.8em;
+    font-weight: 400;
+}
 
 .container-color-brg{
-    background-color: @main-green;
+    background-color: @footer-bgr-color;
 }
 
 .block-footer {
@@ -11,30 +18,39 @@
     flex-direction: column;
 }
 
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    //margin-top: 40px;
+    //margin-bottom: 40px;
+    margin: 40px 0;
+}
+
 .info-items {
-    background-color: blueviolet;
-    height: 300px;
+    //background-color: blueviolet;
+    //height: 300px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
     &__contacts {
-        background-color: yellow;
-        height: 50px;
-        width: 250px;
+        //background-color: yellow;
+        margin-left: 30px;
     }
 
     &__posts {
-        background-color: red;
-        height: 50px;
-        width: 300px;
+        //background-color: red;
+        //height: 50px;
+        //width: 300px;
     }
 
     &__tweets {
-        background-color: greenyellow;
-        height: 50px;
-        width: 300px;
+        //background-color: greenyellow;
+        margin-right: 30px;
+        //height: 50px;
+        //width: 300px;
     }
 }
 
@@ -45,9 +61,43 @@
 }
 
 .heading-5 {
-    color: @color-heading-5;
     text-transform: uppercase;
     font-size: 1.125em;
     font-weight: 700;
     //letter-spacing: -2px;
+    margin-bottom: 1.2em;
+}
+
+.list-block {
+    display: flex;
+    //flex-direction: column;
+    margin-bottom: 0.9em;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    & img {
+        height: 18px;
+        width: 18px;
+        margin-left: 0;
+        margin-right: 0.5em;
+    }
+}
+
+.info-items__tweets {
+    line-height: 140%;
+    & span {
+        color: gray;
+        font-weight: normal;
+        font-size: 0.8em;
+        font-style: italic;
+        //line-height: 120%;
+    }
+}
+
+.twitter-tags {
+    display: block;
+}
+
+.twitter-time {
+    display: block;
 }
