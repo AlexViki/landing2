@@ -1,4 +1,4 @@
-@main-green: #3DB39E;
+@main-green: #3db39e;
 .button {
     height: 60px;
     background-color: @main-green;
@@ -14,5 +14,15 @@
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    text-shadow: 1px 2px 2px rgb(0, 51, 0);
+    text-shadow: 1px 1px 10px #0e201d;
+    border: 2px solid @main-green;
+    transition: 0.3s;
+    &:hover, &:focus, &:active {
+        border: 2px solid #fff;
+        transition: 0.3s;
+    }
+
+     &:active {
+         color: #ff8000;
+      }
 }

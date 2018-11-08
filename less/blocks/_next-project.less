@@ -28,10 +28,15 @@
         color: #fff;
         font-weight: bolder;
         margin-bottom: 60px;
-        &:hover {
-            color: orangered;
-            border: 2px solid orangered;
-            background-color: #fff;
+        transition: 0.3s;
+        &:hover, &:focus, &:active {
+            border: 2px solid rgba(183, 253, 240, 0.61);
+            color: rgba(183, 253, 240, 0.61);
+            transition: 0.3s;
+            outline: none;
         }
+         &:active {
+             color: #ff8000;
+          }
     }
 }
