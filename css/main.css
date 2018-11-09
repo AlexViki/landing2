@@ -450,7 +450,7 @@ body {
 }
 .block-logos {
   display: flex;
-  height: 90px;
+  height: 6em;
   align-content: center;
   justify-content: space-around;
   align-items: center;
@@ -552,7 +552,7 @@ body {
   display: block;
 }
 .social-items {
-  height: 80px;
+  height: 5em;
   display: flex;
   justify-content: center ;
   align-items: center;
