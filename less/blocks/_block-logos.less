@@ -1,9 +1,26 @@
+@main-green: #3db39e;
+
 .block-logos {
+    display: flex;
+    height: 90px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block-logo-item {
+    width: 190px;
+    height: 45px;
     display: flex;
     align-content: center;
     justify-content: space-around;
-    height: 150px;
-    & img {
-        margin: auto;
+    align-items: center;
+    border-bottom: 0px solid @main-green;
+    padding-bottom: 8px;
+    transition: 0.3s;
+    &:hover, &:focus, &:active {
+        border-bottom: 2px solid @main-green;
+        padding-bottom: 2px;
+        outline: none;
     }
 }
