@@ -462,7 +462,6 @@ body {
   justify-content: space-around;
   align-items: center;
   border-bottom: 0px solid #3db39e;
-  padding-bottom: 8px;
   transition: 0.2s;
 }
 .block-logo-item:hover,
@@ -479,6 +478,11 @@ body {
   color: #ffffff;
   font-size: 0.8em;
   font-weight: 400;
+}
+.footer p,
+.footer a {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .container-color-brg {
   background-color: #222222;
@@ -498,6 +502,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.info-items a {
+  text-decoration: none;
+  color: #fff;
+}
+.info-items a:hover {
+  color: #3DB39E;
 }
 .info-items__contacts {
   margin-left: 30px;
@@ -542,7 +553,7 @@ body {
 .social-items {
   height: 80px;
   display: flex;
-  justify-content: ;
+  justify-content: center ;
   align-items: center;
 }
 .social-items p {
