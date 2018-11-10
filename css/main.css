@@ -54,15 +54,6 @@
   box-sizing: border-box;
   font-size: 1em;
 }
-.image-overlay {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(41, 41, 41, 0.644);
-}
 .text {
   line-height: 22px;
 }
@@ -238,6 +229,7 @@ body {
 }
 .button {
   height: 60px;
+  width: 250px;
   background-color: #3db39e;
   border-radius: 40px;
   padding-left: 35px;
@@ -263,6 +255,15 @@ body {
 }
 .button:active {
   color: #ff8000;
+}
+.image-overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.644);
 }
 .special-bgr-block {
   height: 530px;
@@ -311,6 +312,12 @@ body {
   background-color: #eeeeee;
   position: relative;
 }
+@media (max-width: 940px) {
+  .special-bgr-block-icon {
+    display: none;
+    width: 100%;
+  }
+}
 .special-bgr-block-icon:after {
   display: block;
   width: 200px;
@@ -330,13 +337,25 @@ body {
   background-position: left top;
   background-size: cover;
 }
+@media (max-width: 940px) {
+  .special-bgr-block-photo {
+    width: 100%;
+  }
+}
 .special-bgr-block-content {
   width: 700px;
-  margin-left: 100px;
 }
 .block-content {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 100px;
+}
+@media (max-width: 940px) {
+  .block-content {
+    width: 100%;
+    margin: 10px 10px 20px;
+  }
 }
 .container-items-list {
   list-style-type: none;
@@ -496,10 +515,7 @@ body {
   margin-bottom: 25px;
 }
 .next-project__contact {
-  height: 46px;
-  width: 174px;
   border: 2px solid #fff;
-  border-radius: 5px;
   margin: auto;
   background-color: #3db39e;
   font-size: 1.125em;
