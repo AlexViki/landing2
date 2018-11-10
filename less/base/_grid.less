@@ -13,6 +13,10 @@
 .container-padding {
     padding-top: 80px;
     padding-bottom: 80px;
+    @media (max-width: 940px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .heading-block {
@@ -29,9 +33,12 @@
 .container-items {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 940px) {
+        flex-direction: column;
+    }
 }
 
 // block Latest-project

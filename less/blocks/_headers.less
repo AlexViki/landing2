@@ -3,13 +3,16 @@
 @color-subtitle-text: #2c2c2c;
 
 .heading-block {
-    margin-bottom: 60px;
+    margin-bottom: 3.5em;
     text-align: center;
+    @media (max-width: 940px) {
+        margin-bottom: 2.5em;
+    }
 }
 
 .heading-1 {
-    font-size: 60px;
-    line-height: 65px;
+    font-size: 3.75em;
+    line-height: 1.1;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -19,17 +22,20 @@
 }
 
 .heading-2 {
-    font-size: 45px;
-    line-height: 65px;
+    font-size: 2.8em;
+    line-height: 1.1;
     font-weight: 700;
     color: #2c2c2c;
     text-transform: uppercase;
     letter-spacing: -2px;
     margin-bottom: 10px;
+    @media (max-width: 940px) {
+        margin-bottom: 12px;
+    }
 }
 
 .subtitle {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #808080;
 }
 
@@ -50,7 +56,7 @@
 
 .heading-4 {
     color: @color-heading-4;
-    font-size: 18px;
+    font-size: 1.25em;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 30px;
@@ -63,5 +69,4 @@
 
 .text {
     color: @color-subtitle-text;
-    font-size: 16px;
 }
