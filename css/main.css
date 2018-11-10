@@ -574,19 +574,21 @@ body {
   align-items: center;
 }
 .social-items p {
-  margin-left: 40px;
-  color: gray;
+  color: #808080;
   font-weight: normal;
   font-size: 0.75em;
 }
 .social-logo {
   margin-left: 18%;
 }
+.social-logo a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+.social-logo a:last-child {
+  margin-right: 0;
+}
 .social-logo img {
   height: 44px;
   width: 44px;
-  margin-right: 15px;
-}
-.social-logo img:last-child {
-  margin-right: 0;
 }
