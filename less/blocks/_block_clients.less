@@ -1,24 +1,19 @@
 @bgr-color: #eeeeee;
 
 .block-clients {
-    margin-top: 50px;
+
 }
 
 .block-comments {
     display: flex;
     flex-direction: column;
-
 }
 
 .block-comments-1 {
-    //height: 100px;
-    //width: 100%;
-    //background-color: aqua;
+
 }
 .block-comments-2 {
-    //height: 100px;
-    //width: 100%;
-    //background-color: rebeccapurple;
+
 }
 
 .photo-client {
@@ -29,6 +24,10 @@
         height: 160px;
         width: 160px;
         border-radius: 50%;
+        @media (max-width: 940px) {
+            height: 80px;
+            width: 80px;
+        }
     }
 }
 
@@ -54,15 +53,25 @@
     &:last-child {
         padding-bottom: 0;
     }
+    @media (max-width: 940px) {
+        padding-bottom: 0.5em;
+    }
 }
 
 .comment-client-text {
     font-size: 1.125em;
     margin-bottom: 0.9em;
-    //text-align: center;
+    @media (max-width: 940px) {
+        font-size: 0.8em;
+        line-height: 1.1;
+    }
 }
 
 .comment-client-quote {
     font-size: 0.9em;
     font-style: italic;
+    @media (max-width: 940px) {
+        font-size: 0.6em;
+        line-height: 1.1;
+    }
 }

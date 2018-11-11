@@ -1,5 +1,13 @@
 @main-green: #3DB39E;
 
+.latest-project {
+    width: 100%;
+    @media (max-width: 940px) {
+        width: 100%;
+        margin: 0 15px 15px;
+    }
+}
+
 .container-items-list{
     list-style-type: none;
     & li {
@@ -50,12 +58,19 @@
 
 .latest-project-content-block {
     display: flex;
+    @media (max-width: 940px) {
+        width: 100%;
+        //margin: 0 15px 0;
+    }
 }
 
 .content-brg-photo {
     height: 500px;
     width: 100%;
     background: #3DB39E;
+    @media (max-width: 940px) {
+        display: none;
+    }
 }
 
 .content-brg-photo {
