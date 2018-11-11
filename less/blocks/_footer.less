@@ -2,7 +2,6 @@
 @footer-bgr-color: #222222;
 @color-text: #fff;
 
-
 .footer {
     color: @color-text;
     font-size: 0.8em;
@@ -14,13 +13,30 @@
     }
 }
 
-.container-color-brg{
+.brg-footer-color{
     background-color: @footer-bgr-color;
 }
 
-.block-footer {
+.info-items {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    & a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            color:#3DB39E;
+        }
+    }
+    @media (max-width: 940px) {
+        flex-direction: column;
+        padding-top: 35px;
+        padding-left: 25px;
+        line-height: 100%;
+    }
 }
 
 .item {
@@ -28,52 +44,39 @@
     flex-direction: column;
     width: 33%;
     margin: 40px 0;
-}
+    line-height: 140%;
+    &:first-child {
+        margin-left: 50px;
 
-.info-items {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    & a {
-        text-decoration: none;
-        color: #fff;
-        &:hover {
-            color:#3DB39E;
+    }
+    &:last-child {
+        margin-right: 50px;
+    }
+    @media (max-width: 940px) {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 30px;
+        &:first-child {
+            margin-left: 0;
+    
+        }
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
         }
     }
 
-    &__contacts {
-        //background-color: yellow;
-        margin-left: 30px;
-    }
-
-    &__posts {
-        //background-color: red;
-        //height: 50px;
-        //width: 300px;
-    }
-
-    &__tweets {
-        //background-color: greenyellow;
-        margin-right: 30px;
-        //height: 50px;
-        //width: 300px;
-    }
 }
 
 .heading-5 {
     text-transform: uppercase;
     font-size: 1.125em;
     font-weight: 700;
-    //letter-spacing: -2px;
     margin-bottom: 1.2em;
 }
 
 .list-block {
     display: flex;
-    //flex-direction: column;
     margin-bottom: 0.9em;
     &:last-child{
         margin-bottom: 0;
@@ -84,16 +87,21 @@
         margin-left: 0;
         margin-right: 0.5em;
     }
+    @media (max-width: 940px) {
+        margin-bottom: 4px;
+        &:last-child{
+        margin-bottom: 0;
+        }
+    }
 }
 
 .info-items__tweets {
-    line-height: 140%;
+    //line-height: 140%;
     & span {
-        color: gray;
+        color: #808080;
         font-weight: normal;
         font-size: 0.8em;
         font-style: italic;
-        //line-height: 120%;
     }
 }
 
@@ -104,6 +112,10 @@
 .twitter-time {
     display: block;
 }
+
+
+///////////////////////////////////////////////
+
 
 .social-items {
     height: 5em;
