@@ -8,8 +8,8 @@
 @media (max-width: 940px) {
   .container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .container-fluid {
@@ -86,17 +86,6 @@ body {
     margin-bottom: 1.3em;
   }
 }
-/*
-.logo-hoder {
-    display: flex;
-    align-items: center;
-    height: 5em;
-    @media (max-width: 940px) {
-        width: 100%;
-        height: 3.5em;
-    }
-}
-*/
 .logo-block {
   display: flex;
   justify-content: left;
@@ -243,6 +232,11 @@ body {
 .header-content {
   width: 620px;
 }
+@media (max-width: 940px) {
+  .header-content {
+    width: 100%;
+  }
+}
 .main-header {
   display: flex;
   justify-content: center;
@@ -375,7 +369,6 @@ body {
 @media (max-width: 940px) {
   .latest-project {
     width: 100%;
-    margin: 0 15px 15px;
   }
 }
 .container-items-list {
