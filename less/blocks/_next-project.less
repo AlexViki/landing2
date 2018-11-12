@@ -12,8 +12,14 @@
     text-align: center;
     & .heading-2 {
         color: #fff;
-        margin-top: 60px;
-        margin-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        @media (max-width: 940px) {
+            margin-bottom: 0;
+            padding-top: 1.1em;
+            padding-bottom: 1.1em;
+        }
+
     }
 }
 
@@ -25,7 +31,7 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: bolder;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
     transition: 0.3s;
     &:hover, &:focus, &:active {
         border: 2px solid rgba(183, 253, 240, 0.61);

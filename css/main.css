@@ -8,8 +8,8 @@
 @media (max-width: 940px) {
   .container {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .container-fluid {
@@ -168,7 +168,8 @@ body {
 }
 @media (max-width: 940px) {
   .heading-block {
-    padding-bottom: 2.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 .heading-1 {
@@ -313,6 +314,11 @@ body {
   top: 0;
   left: 0;
 }
+@media (max-width: 940px) {
+  .special-bgr-block__list-check {
+    margin-bottom: 30px;
+  }
+}
 .special-bgr-block-icon {
   width: 30%;
   background-color: #eeeeee;
@@ -360,7 +366,12 @@ body {
 @media (max-width: 940px) {
   .block-content {
     width: 100%;
-    margin: 10px 10px 20px;
+    margin: 30px 20px;
+  }
+}
+@media (max-width: 940px) {
+  .special-btn {
+    width: 100%;
   }
 }
 .latest-project {
@@ -369,6 +380,9 @@ body {
 @media (max-width: 940px) {
   .latest-project {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
   }
 }
 .container-items-list {
@@ -414,7 +428,8 @@ body {
   text-decoration: none;
 }
 .bottom20 {
-  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .latest-project-content-block {
   display: flex;
@@ -455,10 +470,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
     margin-bottom: 20px;
     width: 100%;
     align-items: stretch;
+    text-align: left;
   }
   .col-1-of-3:last-child {
     margin-bottom: 0;
@@ -472,7 +487,6 @@ body {
     margin-top: 15px;
   }
   .col-1-of-3 img {
-    margin-left: 15px;
     margin-right: 15px;
   }
 }
@@ -555,8 +569,15 @@ body {
 }
 .next-project .heading-2 {
   color: #fff;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media (max-width: 940px) {
+  .next-project .heading-2 {
+    margin-bottom: 0;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+  }
 }
 .btn-contact-us {
   border: 2px solid #fff;
@@ -566,7 +587,6 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: bolder;
-  margin-bottom: 30px;
   transition: 0.3s;
 }
 .btn-contact-us:hover,
@@ -782,7 +802,7 @@ body {
 }
 @media (max-width: 940px) {
   .copyright {
-    margin-left: 20px;
+    margin-left: 13px;
     padding-right: 20px;
   }
 }
