@@ -1,0 +1,104 @@
+@main-green: #3DB39E;
+@color-text: #cccccc;
+
+.special-bgr-block {
+    height: 530px;
+    display: flex;
+    justify-content: left;
+    &__heading-2 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__and{
+        color: @main-green;
+    }
+    &__subtitle {
+        font-size: 18px;
+        color: @color-text;
+        margin-bottom: 30px;
+    }
+    &__list-check {
+        list-style-type: none;
+        font-size: 18px;
+        color: @color-text;
+        margin-bottom: 50px;
+        & li {
+            position: relative;
+            padding-left: 33px;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &:before {
+                content: "";
+                background-image: url(../img/icons/checked.svg);
+                background-repeat: no-repeat;
+                background-position: left top;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 0;
+                left: 0;
+            }
+        }
+        @media (max-width: 940px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.special-bgr-block-icon {
+    width: 30%;
+    background-color:#eeeeee;
+    position: relative;
+    @media (max-width: 940px) {
+        display: none;
+        width: 100%;
+    }
+}
+
+.special-bgr-block-icon:after {
+    display: block;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-image: url(../img/bgr/bgr_gear.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    right: 0px;
+    top: 0px;
+}
+
+.special-bgr-block-photo {
+    width: 70%;
+    background-image: url(../img/bgr/brg_just_relax.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    @media (max-width: 940px) {
+        width: 100%;
+    }
+}
+
+.special-bgr-block-content {
+    width: 700px;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 100px;
+    @media (max-width: 940px) {
+        width: 100%;
+        width: 100%;
+        margin: 30px 20px;;
+    }
+}
+
+.special-btn {
+    @media (max-width: 940px) {
+        width: 100%;
+    }
+}
