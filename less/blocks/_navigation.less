@@ -1,7 +1,5 @@
 @main-green: #3DB39E;
 
-
-
 .container-navigation {
     display: flex;
     align-items: center;
@@ -56,6 +54,7 @@
     padding-bottom: 8px;
     transition: 0.2s;
     &:hover, &:focus, &:active {
+        transition: 1;
         color: @main-green;
         border-bottom: 1px solid @main-green;
         padding-bottom: 2px;
@@ -81,55 +80,97 @@
     & span {
         display: block;
         position: absolute;
-        height: 5px;
+        height: 4px;
         width: 100%;
         background: #333333;
-        border-radius: 5px;
+        border-radius: 4px;
         opacity: 1;
-        left: 0;
+        //left: 0;
+        right: 0;
         transform: rotate(0deg);
         transition: .25s ease-in-out;
         &:nth-child(1) {
+            width: 100%;
             top: 0;
         }
         &:nth-child(2) {
             top: 13px;
+            width: 70%;
         }
         &:nth-child(3) {
             top: 13px;
+            width: 70%;
         }
         &:nth-child(4) {
             top: 26px;
+            width: 50%;
         }
     }
 }
 
 @media (max-width: 940px) {
+    .container-navigation {
+        display: flex;
+        //align-items: center;
+        //justify-content: space-between;
+        //background-color: aqua;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
     .menu-mobile {
         display: inline-block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow: auto;
-        text-align: right;
+        //position: fixed;
+        //top: 0;
+        //left: 0;
+        //overflow: auto;
+        //text-align: right;
         //z-index: 1000;
     }
     .menu__links {
         position: fixed;
         display: block;
-        width: 300px;
+        width: 100%;
+        //height: 50%;
         top: 0;
         left: 0;
         right: 0;
-        //margin-top: 52px;
+        margin-top: 60px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 1000;
         overflow: auto;
     }
     .menu__links-item {
         display: block;
-        padding: 10px 0;
-        text-align: center;
+        //padding: 20px 0;
+        margin-left: 0;
+        padding-top: 35px;
+        padding-right: 40px;
+        padding-bottom: 0;
+        text-align: right;
         color: #fff;
+        &:first-child{
+            padding-top: 0;
+        }
+        &:hover, &:focus, &:active {
+            color: @main-green;
+            border-bottom: none;
+            padding-bottom: 0;
+            text-decoration: none;
+            outline: none;
+        }
+        &:active {
+            color: #ff8000;
+            border-bottom: none;
+            padding-bottom: 0;
+            text-decoration: none;
+         }
     }
+}
+
+
+// стили для открытого состояния меню
+.menu_state_open {
+
 }

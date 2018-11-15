@@ -1,6 +1,7 @@
 @main-green: #3DB39E;
 @color-text: #cccccc;
 
+
 .special-bgr-block {
     height: 530px;
     display: flex;
@@ -41,8 +42,9 @@
                 left: 0;
             }
         }
-    }
-    & a {
+        @media (max-width: 940px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -50,6 +52,10 @@
     width: 30%;
     background-color:#eeeeee;
     position: relative;
+    @media (max-width: 940px) {
+        display: none;
+        width: 100%;
+    }
 }
 
 .special-bgr-block-icon:after {
@@ -71,14 +77,29 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
+    @media (max-width: 940px) {
+        width: 100%;
+    }
 }
 
 .special-bgr-block-content {
     width: 700px;
-    margin-left: 100px;
 }
 
 .block-content {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 100px;
+    @media (max-width: 940px) {
+        width: 100%;
+        width: 100%;
+        margin: 30px 20px;;
+    }
+}
+
+.special-btn {
+    @media (max-width: 940px) {
+        width: 100%;
+    }
 }
