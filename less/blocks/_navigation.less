@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //background-color: aqua;
     padding-top: 35px;
 }
 
@@ -40,7 +39,6 @@
 .menu {
     display: flex;
     justify-content: flex-end;
-    //background-color: bisque;
 }
 .menu__links-item {
     display: inline-block;
@@ -54,7 +52,6 @@
     padding-bottom: 8px;
     transition: 0.2s;
     &:hover, &:focus, &:active {
-        transition: 1;
         color: @main-green;
         border-bottom: 1px solid @main-green;
         padding-bottom: 2px;
@@ -76,7 +73,6 @@
     cursor: pointer;
     height: 40px;
     width: 40px;
-    //background-color: red;
     & span {
         display: block;
         position: absolute;
@@ -85,10 +81,10 @@
         background: #333333;
         border-radius: 4px;
         opacity: 1;
-        //left: 0;
         right: 0;
         transform: rotate(0deg);
         transition: .25s ease-in-out;
+        box-shadow: 0px 0px 5px #fff;
         &:nth-child(1) {
             width: 100%;
             top: 0;
@@ -111,39 +107,30 @@
 @media (max-width: 940px) {
     .container-navigation {
         display: flex;
-        //align-items: center;
-        //justify-content: space-between;
-        //background-color: aqua;
         padding-top: 15px;
         padding-bottom: 5px;
     }
+    .menu {
+        height: 40px;
+        width: 40px;
+    }
     .menu-mobile {
         display: inline-block;
-        //position: fixed;
-        //top: 0;
-        //left: 0;
-        //overflow: auto;
-        //text-align: right;
-        //z-index: 1000;
+        position: fixed;
     }
     .menu__links {
         position: fixed;
-        display: block;
+        display: none;
         width: 100%;
-        //height: 50%;
         top: 0;
         left: 0;
         right: 0;
-        margin-top: 60px;
-        padding-top: 35px;
-        padding-bottom: 35px;
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 1000;
         overflow: auto;
     }
     .menu__links-item {
         display: block;
-        //padding: 20px 0;
         margin-left: 0;
         padding-top: 35px;
         padding-right: 40px;
@@ -171,6 +158,29 @@
 
 
 // стили для открытого состояния меню
-.menu_state_open {
+.menu.menu_state_open .menu-mobile span:nth-child(1) {
+    display: none;
+    top: 18px;
+    width: 0;
+    left: 0;
+}
+.menu.menu_state_open .menu-mobile span:nth-child(4) {
+    display: none;
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+.menu.menu_state_open .menu-mobile span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.menu.menu_state_open .menu-mobile span:nth-child(3) {
+    transform: rotate(-45deg);
 
 }
+.menu.menu_state_open .menu__links {
+    display: block;
+    margin-top: 60px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
