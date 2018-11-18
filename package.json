@@ -1,0 +1,24 @@
+{
+  "name": "treehouse",
+  "version": "1.0.0",
+  "description": "This is one of my training task of landing page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexViki/landing2.git"
+  },
+  "author": "AlexViki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexViki/landing2/issues"
+  },
+  "homepage": "https://github.com/AlexViki/landing2#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-rename": "^1.4.0"
+  }
+}
