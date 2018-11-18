@@ -4,27 +4,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 // LOGO BLOCK
 .logo-block {
     display: flex;
-    width: 200px;
     justify-content: flex-start;
     align-items: center;
-    &__circle {
-        display: flex;
-        top: 0;
-        left: 0;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        overflow: auto;
-        border-radius: 50%;
-        background: @main-green;
-        height: 25px;
-        width: 25px;
+    &__img {
+        height: 44px;
+        width: 44px;
     }
     &__text {
         display: block;
@@ -32,6 +23,7 @@
         font-weight: bolder;
         color: #2c2c2c;
         margin-left: 10px;
+        font-size: 1.5em;
     }    
 }
 
@@ -107,8 +99,8 @@
 @media (max-width: 940px) {
     .container-navigation {
         display: flex;
-        padding-top: 15px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .menu {
         height: 40px;
@@ -117,6 +109,7 @@
     .menu-mobile {
         display: inline-block;
         position: fixed;
+        z-index: 1001;
     }
     .menu__links {
         position: fixed;
@@ -156,7 +149,6 @@
     }
 }
 
-
 // стили для открытого состояния меню
 .menu.menu_state_open .menu-mobile span:nth-child(1) {
     display: none;
@@ -175,12 +167,10 @@
 }
 .menu.menu_state_open .menu-mobile span:nth-child(3) {
     transform: rotate(-45deg);
-
 }
 .menu.menu_state_open .menu__links {
     display: block;
-    margin-top: 60px;
-    padding-top: 35px;
+    padding-top: 80px;
     padding-bottom: 35px;
 }
 

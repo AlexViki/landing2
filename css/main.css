@@ -75,26 +75,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo-block {
   display: flex;
-  width: 200px;
   justify-content: flex-start;
   align-items: center;
 }
-.logo-block__circle {
-  display: flex;
-  top: 0;
-  left: 0;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  overflow: auto;
-  border-radius: 50%;
-  background: #3db39e;
-  height: 25px;
-  width: 25px;
+.logo-block__img {
+  height: 44px;
+  width: 44px;
 }
 .logo-block__text {
   display: block;
@@ -102,6 +93,7 @@ body {
   font-weight: bolder;
   color: #2c2c2c;
   margin-left: 10px;
+  font-size: 1.5em;
 }
 .menu {
   display: flex;
@@ -173,8 +165,8 @@ body {
 @media (max-width: 940px) {
   .container-navigation {
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .menu {
     height: 40px;
@@ -183,6 +175,7 @@ body {
   .menu-mobile {
     display: inline-block;
     position: fixed;
+    z-index: 1001;
   }
   .menu__links {
     position: fixed;
@@ -243,8 +236,7 @@ body {
 }
 .menu.menu_state_open .menu__links {
   display: block;
-  margin-top: 60px;
-  padding-top: 35px;
+  padding-top: 80px;
   padding-bottom: 35px;
 }
 .heading-block {
@@ -310,7 +302,7 @@ body {
 }
 .bgr-photo-header {
   height: 530px;
-  background-image: url(../img/bgr/bgr_header.png);
+  background-image: url(../img/bgr/bgr_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
